@@ -1,11 +1,11 @@
 class Hero
+
+  attr_accessor :name
+  attr_accessor :health
+
   def initialize name, health=100
     @name = name.capitalize
     @health = health
-  end
-
-  def name
-    @name
   end
 
   def power_up
@@ -24,3 +24,6 @@ end
 
 hero = Hero.new 'Mike'
 
+puts hero.name
+hero.power_down
+puts hero.hero_info
